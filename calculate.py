@@ -7,6 +7,25 @@ funcs = ['perimeter', 'area']
 sizes = {}
 
 def calc(fig, func, size):
+	'''
+	Возвращает значение функции для фигуры с заданными параметрами.
+
+
+		Параметры:
+			fig (str): вид фигуры "circle"/"square";
+			func (str): тип функции "perimeter"/"area";
+			size (list): список параметров фигуры.
+
+
+		Возвращаемое значение:
+			Функция ничего не возвращает, выводит на экран результат вычислений.
+
+
+		Пример вызова:
+			>> calc('circle', 'perimeter', {5})
+			perimeter of circle is 31.41592653589793
+
+	'''
 	assert fig in figs
 	assert func in funcs
 
